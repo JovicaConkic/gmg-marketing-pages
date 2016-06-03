@@ -294,7 +294,7 @@ module.exports = function (grunt) {
    * Default task
    * Run `grunt` on the command line
    */
-  grunt.registerTask('default', [
+  grunt.registerTask('serve', [
     'sass:dev',
     'bower:dist',
     'autoprefixer:dist',
