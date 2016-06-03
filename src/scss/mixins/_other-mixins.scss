@@ -1,0 +1,43 @@
+@mixin opacity($op, $ie-op) {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="$ie-op")";
+    /* IE 5-7 */
+    filter: alpha(opacity=$ie-op);
+    /* Netscape */
+    -moz-opacity: $op;
+    /* Safari 1.x */
+    -khtml-opacity: $op;
+    /* Good browsers */
+    opacity: $op;
+}
+
+@mixin gradient($top-color, $bottom-color) {
+    background: -webkit-linear-gradient($top-color, $bottom-color); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($top-color, $bottom-color); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($top-color, $bottom-color); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($top-color, $bottom-color); /* Standard syntax (must be last) */
+}
+
+@mixin border-radius($param) {
+    -webkit-border-radius: $param;
+    -moz-border-radius: $param;
+    -ms-border-radius: $param;
+    -o-border-radius: $param;
+    border-radius: $param;
+}
+
+@mixin box-shadow($a, $b, $c, $color) {
+    box-shadow: $a $b $c $color;
+    -moz-box-shadow: $a $b $c $color;
+    -webkit-box-shadow: $a $b $c $color;
+}
+
+@mixin button-gradient($color, $start-color, $stop-color) {
+    background: $color; /* Old browsers */
+    background: -moz-linear-gradient(top, $start-color 0%, $stop-color 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start-color), color-stop(100%, $stop-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, $start-color 0%, $stop-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, $start-color 0%, $stop-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, $start-color 0%, $stop-color 100%); /* IE10+ */
+    background: linear-gradient(to bottom, $start-color 0%, $stop-color 100%); /* W3C */
+}
