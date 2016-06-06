@@ -8,9 +8,21 @@ html {
 }
 
 body {
+    font-family: rubiklight, Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 300;
+    background: $mainBackground;
 }
 
 h1 {
+    font-family: rubikregular, Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 38px;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    font-weight: 500;
 }
 h2 {
 }
