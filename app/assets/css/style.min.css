@@ -352,6 +352,12 @@
   box-sizing: border-box;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0;
+  -moz-font-feature-settings: "liga" 0, "clig" 0;
+  -ms-font-feature-settings: "liga" 0, "clig" 0;
+  -o-font-feature-settings: "liga" 0, "clig" 0;
+  font-feature-settings: "liga" 0, "clig" 0;
 }
 
 html {
@@ -362,7 +368,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: rubiklight, Helvetica, Arial, sans-serif;
+  font-family: rubikregular, Helvetica, Arial, sans-serif;
   color: white;
   font-size: 18px;
   line-height: 1.5em;
@@ -380,7 +386,7 @@ body {
 }
 
 h1 {
-  font-family: rubikregular, Helvetica, Arial, sans-serif;
+  font-family: rubikmedium, Helvetica, Arial, sans-serif;
   color: white;
   font-size: 38px;
   line-height: 1.5em;
