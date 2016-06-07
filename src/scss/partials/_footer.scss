@@ -1,0 +1,84 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 188px;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    background-color: $footerBackground;
+    @media (max-width: $small_devices){
+        height: 314px;
+    }
+    .HMH-logo{
+        width: 153px;
+        height: 95px;
+        @include retina-image('../img/HMH-logo-vertical', 'png');
+        @media (max-width: $small_devices){
+            margin: 0 auto 30px;
+        }
+    }
+    .footer_links{
+        font-size: 15px;
+        margin: 15px 0;
+        text-align: right;
+        @media (max-width: $small_devices){
+            margin: auto;
+            text-align: center;
+        }
+        a{
+            color: white;
+            letter-spacing: 0px;
+        }
+    }
+    .copyright{
+        font-size: 13px;
+        letter-spacing: 0px;
+        line-height: 1em;
+        text-align: right;
+        @media (max-width: $small_devices){
+            display: none;
+        }
+    }
+    .copyright_mobil{
+        display: none;
+        font-size: 13px;
+        @media (max-width: $small_devices){
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .social_buttons{
+        text-align: right;
+        @media (max-width: $small_devices){
+            margin: auto;
+            text-align: center;
+        }
+        a{
+            margin-left: 14px;
+            .facebook{
+                width: 40px;
+                height: 40px;
+                @include retina-image('../img/facebook-btn', 'png');
+                display: inline-block;
+            }
+            .twitter{
+                width: 40px;
+                height: 40px;
+                @include retina-image('../img/twitter-btn', 'png');
+                display: inline-block;
+            }
+            .app-store{
+                width: 135px;
+                height: 40px;
+                @include retina-image('../img/app-store-badge-footer', 'png');
+                display: inline-block;
+            }
+            &last{
+                margin-right: 0px;
+            }
+        }
+    }
+}

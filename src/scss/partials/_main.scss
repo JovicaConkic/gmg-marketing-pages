@@ -1,0 +1,54 @@
+.main{
+    padding-top: 80px;
+    padding-bottom: 188px;
+    @media (max-width: $small_devices){
+        padding-bottom: 314px;
+    }
+    .GMG_logo{
+        width: 308px;
+        height: 53px;
+        display: block;
+        @include retina-image('../img/GMG-logo-horizontal', 'png');
+        @media (max-width: $small_devices){
+            width: 308px;
+            height: 53px;
+            margin: auto;
+            @include retina-image('../img/GMG-logo-horizontal', 'png');
+        }
+    }
+    .product_shots_mobile{
+        display: block;
+        width: 100%;
+        padding-bottom: 83.9%;
+        margin: 50px auto;
+        @include retina-image('../img/product-shots-tablet-mobile', 'png');
+    }
+    .app-store-btn{
+        width: 203px;
+        height: 60px;
+        display: block;
+        @include retina-image('../img/app-store-button', 'png');
+    }
+    .product_shots{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 79.7%;
+        @include retina-image('../img/product-shots-desktop', 'png');
+        @media (max-width: $large_devices){
+            margin: 80px auto 0;
+        }
+    }
+    .characters{
+        width: 100%;
+        padding-bottom: 24.8%;
+        @include retina-image('../img/characters', 'png');
+        @media (max-width: $large_devices){
+            padding-bottom: 43.1%;
+            @include retina-image('../img/characters-tablet', 'png');
+        }
+        @media (max-width: $small_devices){
+            padding-bottom: 43.1%;
+            @include retina-image('../img/characters-mobile', 'png');
+        }
+    }
+}

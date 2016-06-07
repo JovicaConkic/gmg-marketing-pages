@@ -2,15 +2,39 @@
     box-sizing: border-box;
     font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    font-variant-ligatures: no-common-ligatures;
+    @include vendor('font-feature-settings', "liga" 0, "clig" 0);
 }
 html {
     font-size: 62.5%;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: rubikregular, Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 300;
+    background-color: white;
+}
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+#home{
+    background: $mainBackground;
 }
 
 h1 {
+    font-family: rubikmedium, Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 38px;
+    line-height: 1.5em;
+    letter-spacing: 0;
+    font-weight: 500;
 }
 h2 {
 }

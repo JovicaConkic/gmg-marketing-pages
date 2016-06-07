@@ -26,6 +26,7 @@ src/components
 
 ## Sass
 .sass-cache
+.idea
 
 ## OS X
 .DS_Store
