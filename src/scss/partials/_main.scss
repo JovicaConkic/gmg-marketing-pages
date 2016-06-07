@@ -1,67 +1,72 @@
 .main{
     padding-top: 80px;
+    padding-bottom: 188px;
+    @media (max-width: $small_devices){
+        padding-bottom: 314px;
+    }
     .GMG_logo{
         width: 308px;
         height: 53px;
+        display: block;
         @include retina-image('../img/GMG-logo-horizontal', 'png');
-        @media (max-width: $tablet_landscape){
+        /*@media (max-width: $tablet_landscape){
             width: 308px * $tablet_ratio;
             height: 53px * $tablet_ratio;
             @include retina-image('../img/GMG-logo-horizontal', 'png');
-        }
-        @media (max-width: $tablet_portrait){
+        }*/
+        @media (max-width: $small_devices){
             width: 308px;
             height: 53px;
             margin: auto;
             @include retina-image('../img/GMG-logo-horizontal', 'png');
         }
-        @media (max-width: $iphone4){
+        /*@media (max-width: $iphone4){
             width: 308px * $iphone4_ratio;
             height: 53px * $iphone4_ratio;
             margin: auto;
             @include retina-image('../img/GMG-logo-horizontal', 'png');
-        }
+        }*/
     }
     .product_shots_mobile{
-        width: 480px;
-        height: 424px;
         @include retina-image('../img/product-shots-tablet-mobile', 'png');
         display: none;
-        @media (max-width: $tablet_portrait){
+        @media (max-width: $small_devices){
+            width: 100%;
+            height: 848px * $small_devices_ratio;
             display: block;
             margin: auto;
         }
-        @media (max-width: $iphone4){
-            width: 480px * $iphone4_ratio;
-            height: 424px * $iphone4_ratio;
+        /*@media (max-width: $medium_small_devices){
+            width: 100%;
+            height: 848px * $iphone4_ratio;
             display: block;
             margin: auto;
-        }
+        }*/
     }
     .app-store-btn{
-        width: 100%;
-        max-width: 203px;
+        width: 203px;
         height: 60px;
+        display: block;
         @include retina-image('../img/app-store-button', 'png');
     }
     .product_shots{
-        width: 713px;
+        width: 100%;
         height: 591px;
         @include retina-image('../img/product-shots-desktop', 'png');
         margin-top: -50px;
-        @media (max-width: $tablet_landscape){
-            width: 480px * $tablet_ratio;
+        @media (max-width: $large_devices){
+            width: 100%;
             height: 424px * $tablet_ratio;
             margin-top: 53px;
             @include retina-image('../img/product-shots-tablet-mobile', 'png');
         }
-        /*@media (max-width: $medium_devices){
-            width: 480px * $medium_devices_ratio;
+        @media (max-width: $medium_devices){
+            width: 100%;
             height: 424px * $medium_devices_ratio;
             margin-top: 53px;
             @include retina-image('../img/product-shots-tablet-mobile', 'png');
-        }*/
-        @media (max-width: $tablet_portrait){
+        }
+        @media (max-width: $small_devices){
             display: none;
         }
     }
@@ -69,25 +74,20 @@
         width: 100%;
         height: 335px;
         @include retina-image('../img/characters', 'png');
-        @media (max-width: $tablet_landscape){
+        @media (max-width: $large_devices){
             width: 100%;
             height: 357px;
             @include retina-image('../img/characters-tablet', 'png');
         }
-        @media (max-width: $tablet_portrait){
-            width: 100%;
-            height: 357px;
-            @include retina-image('../img/characters-tablet', 'png');
-        }
-        @media (max-width: $iphone6){
+        @media (max-width: $small_devices){
             width: 100%;
             height: 276px * $iphone6_ratio;
             @include retina-image('../img/characters-mobile', 'png');
         }
-        @media (max-width: $iphone4){
+        /*@media (max-width: $iphone4){
             width: 100%;
             height: 276px * $iphone4_ratio;
             @include retina-image('../img/characters-mobile', 'png');
-        }
+        }*/
     }
 }

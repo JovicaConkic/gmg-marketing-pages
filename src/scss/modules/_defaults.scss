@@ -8,11 +8,21 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: rubiklight, Helvetica, Arial, sans-serif;
     color: white;
     font-size: 18px;
     line-height: 1.5em;
     font-weight: 300;
+    background-color: white;
+}
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+#home{
     background: $mainBackground;
 }
 
