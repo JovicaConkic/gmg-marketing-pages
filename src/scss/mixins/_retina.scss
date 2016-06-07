@@ -1,8 +1,8 @@
-@mixin retina-image($file, $type) {
+@mixin retina-image($file, $type, $size: 100%) {
     background-image: url($file + '.' + $type);
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: $size;
     @media only screen and (-webkit-min-device-pixel-ratio: 2),
         only screen and (-moz-min-device-pixel-ratio: 2),
         only screen and (-o-min-device-pixel-ratio: 2/1),
@@ -11,10 +11,10 @@
         only screen and (min-resolution: 2dppx){
         & {
             background-image: url($file + '@2x.' + $type);
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
+            -webkit-background-size: $size;
+            -moz-background-size: $size;
+            -o-background-size: $size;
+            background-size: $size;
         }
     }
 }
