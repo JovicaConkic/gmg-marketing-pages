@@ -12,13 +12,14 @@ html {
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
     color: $dark_color;
     font-size: 16px;
     font-family: $rubik-regular;
     line-height: 1.5em;
     font-weight: 400;
     background-color: $white;
+    position: relative;
 }
 h1 {
     font-family: $rubik-medium;
