@@ -33,6 +33,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'rubikbold';
+  src: url("../fonts/rubik-bold-webfont.eot");
+  src: url("../fonts/rubik-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubik-bold-webfont.woff2") format("woff2"), url("../fonts/rubik-bold-webfont.woff") format("woff"), url("../fonts/rubik-bold-webfont.ttf") format("truetype"), url("../fonts/rubik-bold-webfont.svg#rubikmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 .main {
   padding-top: 80px;
   padding-bottom: 188px;
@@ -53,7 +60,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .GMG_logo {
-    background-image: url("../img/GMG-logo-horizontal@2x.png");
+    background-image: url("../img/GMG-logo-horizontal2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -80,7 +87,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .product_shots_mobile {
-    background-image: url("../img/product-shots-tablet-mobile@2x.png");
+    background-image: url("../img/product-shots-tablet-mobile2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -99,7 +106,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .app-store-btn {
-    background-image: url("../img/app-store-button@2x.png");
+    background-image: url("../img/app-store-button2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -117,7 +124,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .product_shots {
-    background-image: url("../img/product-shots-desktop@2x.png");
+    background-image: url("../img/product-shots-desktop2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -139,7 +146,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .characters {
-    background-image: url("../img/characters@2x.png");
+    background-image: url("../img/characters2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -157,7 +164,7 @@
 }
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1024px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1024px) and (min-resolution: 192dpi), only screen and (max-width: 1024px) and (min-resolution: 2dppx) {
   .main .characters {
-    background-image: url("../img/characters-tablet@2x.png");
+    background-image: url("../img/characters-tablet2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -176,7 +183,7 @@
 }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .main .characters {
-    background-image: url("../img/characters-mobile@2x.png");
+    background-image: url("../img/characters-mobile2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -243,7 +250,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .right_box .left_part .GMG_app_icon {
-    background-image: url("../img/GMG-app-icon@2x.png");
+    background-image: url("../img/GMG-app-icon2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -307,7 +314,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .HMH-logo {
-    background-image: url("../img/HMH-logo-vertical@2x.png");
+    background-image: url("../img/HMH-logo-vertical2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -384,7 +391,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .social_buttons a .facebook {
-    background-image: url("../img/facebook-btn@2x.png");
+    background-image: url("../img/facebook-btn2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -402,7 +409,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .social_buttons a .twitter {
-    background-image: url("../img/twitter-btn@2x.png");
+    background-image: url("../img/twitter-btn2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -420,7 +427,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .social_buttons a .app-store {
-    background-image: url("../img/app-store-badge-footer@2x.png");
+    background-image: url("../img/app-store-badge-footer2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -470,7 +477,7 @@ h1 {
 }
 
 h2 {
-  font-family: rubikmedium, Helvetica, Arial, sans-serif;
+  font-family: rubikbold, Helvetica, Arial, sans-serif;
   color: #1B4D5F;
   font-size: 24px;
   font-weight: 700;
