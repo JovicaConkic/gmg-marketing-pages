@@ -69,25 +69,12 @@
 }
 @media (max-width: 767px) {
   .main .GMG_logo {
-    width: 308px;
-    height: 53px;
+    width: 100%;
+    max-width: 308px;
+    padding-bottom: 17.2%;
     margin: auto;
-    background-image: url("../img/GMG-logo-horizontal.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .main .GMG_logo {
-    background-image: url("../img/GMG-logo-horizontal@2x.png");
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-  }
-}
-
 .main .product_shots_mobile {
   display: block;
   width: 100%;
@@ -108,9 +95,10 @@
   }
 }
 .main .app-store-btn {
-  width: 203px;
-  height: 60px;
-  display: block;
+  width: 100%;
+  max-width: 203px;
+  padding-bottom: 29.5%;
+  display: inline-block;
   background-image: url("../img/app-store-button.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -209,23 +197,59 @@
 .main .text_section h1 {
   margin: 40px 0 20px;
 }
+@media (max-width: 767px) {
+  .main .holder_right_box {
+    padding: 0;
+    background-color: #1B4D5F;
+  }
+}
 .main .right_box {
+  width: 325px;
   background-color: #1B4D5F;
   border-radius: 10px;
-  padding: 13px 20px 9px 11px;
+  padding: 13px 11px 9px;
+  margin-top: 88px;
 }
-.main .GMG_app_icon {
+@media (max-width: 1024px) {
+  .main .right_box {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main .right_box {
+    max-width: 325px;
+    margin: auto;
+    float: none !important;
+  }
+}
+.main .right_box .left_part {
+  float: left;
+  width: 100%;
+  max-width: 114px;
+  margin-right: 11px;
+}
+@media (max-width: 1024px) {
+  .main .right_box .left_part {
+    margin: auto;
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  .main .right_box .left_part {
+    margin-right: 11px;
+    float: left;
+  }
+}
+.main .right_box .left_part .GMG_app_icon {
   width: 114px;
   height: 114px;
-  margin-right: 11px;
-  float: left;
   background-image: url("../img/GMG-app-icon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .main .GMG_app_icon {
+  .main .right_box .left_part .GMG_app_icon {
     background-image: url("../img/GMG-app-icon@2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -233,10 +257,24 @@
     background-size: 100%;
   }
 }
-.main .right_part {
+.main .right_box .right_part {
   float: left;
+  width: 100%;
+  max-width: 169px;
 }
-.main .right_part .try {
+@media (max-width: 1024px) {
+  .main .right_box .right_part {
+    margin: auto;
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  .main .right_box .right_part {
+    margin: 0;
+    float: left;
+  }
+}
+.main .right_box .right_part .try {
   margin: 10px 0;
   font-family: rubikmedium, Helvetica, Arial, sans-serif;
   font-size: 24px;
@@ -244,9 +282,13 @@
   color: #ffffff;
   letter-spacing: 0px;
 }
-.main .right_part .app-store-btn {
-  width: 145%;
-  padding-bottom: 29.5%;
+@media (max-width: 1024px) {
+  .main .right_box .right_part .try {
+    text-align: center;
+  }
+}
+.main .right_box .right_part .app-store-btn {
+  max-width: 169px;
 }
 
 .footer {
@@ -254,7 +296,7 @@
   bottom: 0;
   height: 188px;
   width: 100%;
-  padding: 30px 0 30px 0;
+  padding: 30px 0;
   background-color: #181818;
 }
 @media (max-width: 767px) {
@@ -415,13 +457,14 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   color: #1B4D5F;
   font-size: 16px;
   font-family: rubikregular, Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   font-weight: 400;
   background-color: #ffffff;
+  position: relative;
 }
 
 h1 {
@@ -454,11 +497,6 @@ h2 {
   text-shadow: none;
 }
 
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
 #home {
   background: -moz-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
   /* FF3.6+ */
@@ -474,7 +512,7 @@ h2 {
 #home h1 {
   color: #ffffff;
 }
-#home .main p {
+#home.main p {
   color: #ffffff;
   font-size: 18px;
 }
