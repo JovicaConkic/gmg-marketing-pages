@@ -212,12 +212,12 @@
 .main .right_box {
   background-color: #1B4D5F;
   border-radius: 10px;
-  padding: 20px;
+  padding: 13px 20px 9px 11px;
 }
 .main .GMG_app_icon {
   width: 114px;
   height: 114px;
-  margin-right: 20px;
+  margin-right: 11px;
   float: left;
   background-image: url("../img/GMG-app-icon.png");
   background-position: center;
@@ -234,7 +234,7 @@
   }
 }
 .main .right_part {
-  float: right;
+  float: left;
 }
 .main .right_part .try {
   margin: 10px 0;
@@ -245,8 +245,8 @@
   letter-spacing: 0px;
 }
 .main .right_part .app-store-btn {
-  width: 185px;
-  height: 55px;
+  width: 145%;
+  padding-bottom: 29.5%;
 }
 
 .footer {
@@ -304,6 +304,7 @@
   letter-spacing: 0px;
   line-height: 1em;
   text-align: right;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .footer .copyright {
@@ -313,6 +314,7 @@
 .footer .copyright_mobil {
   display: none;
   font-size: 13px;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .footer .copyright_mobil {
@@ -422,31 +424,6 @@ body {
   background-color: #ffffff;
 }
 
-.wrapper {
-  min-height: 100%;
-  position: relative;
-}
-
-#home {
-  background: -moz-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
-  /* FF3.6+ */
-  background: -webkit-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
-  /* IE10+ */
-  background: linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
-  /* W3C */
-}
-#home h1 {
-  color: #ffffff;
-}
-#home p {
-  color: white;
-  font-size: 18px;
-}
-
 h1 {
   font-family: rubikmedium, Helvetica, Arial, sans-serif;
   color: #1B4D5F;
@@ -475,6 +452,31 @@ h2 {
   background: transparent;
   color: white;
   text-shadow: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#home {
+  background: -moz-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
+  /* IE10+ */
+  background: linear-gradient(-179deg, #13323D 0%, #1B4D5F 100%);
+  /* W3C */
+}
+#home h1 {
+  color: #ffffff;
+}
+#home .main p {
+  color: #ffffff;
+  font-size: 18px;
 }
 
 @media print {

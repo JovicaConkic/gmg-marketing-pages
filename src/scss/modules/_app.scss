@@ -1,0 +1,14 @@
+.wrapper{
+    min-height: 100%;
+    position: relative;
+}
+#home{
+    @include background-gradient(-179deg, #13323D, #1B4D5F);
+    h1{
+        color: $white;
+    }
+    .main p{
+        color: $white;
+        font-size: $body-text;
+    }
+}

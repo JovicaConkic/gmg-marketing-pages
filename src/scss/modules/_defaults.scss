@@ -20,21 +20,6 @@ body {
     font-weight: 400;
     background-color: $white;
 }
-.wrapper{
-    min-height: 100%;
-    position: relative;
-}
-#home{
-    @include background-gradient(-179deg, #13323D, #1B4D5F);
-    h1{
-        color: $white;
-    }
-    p{
-        color: white;
-        font-size: $body-text;
-    }
-}
-
 h1 {
     font-family: $rubik-medium;
     color: $dark_color;
