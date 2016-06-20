@@ -21,7 +21,7 @@
         margin: 15px 0;
         text-align: right;
         @media (max-width: $small_devices){
-            margin: auto;
+            margin: 15px -2px;
             text-align: center;
         }
         a{
