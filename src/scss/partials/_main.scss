@@ -29,6 +29,7 @@
         padding-bottom: 29.5%;
         display: inline-block;
         @include retina-image('../img/app-store-button', 'png');
+        background-position: top;
     }
     .product_shots{
         width: 100%;
