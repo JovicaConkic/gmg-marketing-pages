@@ -334,7 +334,7 @@
 }
 @media (max-width: 767px) {
   .footer .footer_links {
-    margin: auto;
+    margin: 15px -2px;
     text-align: center;
   }
 }
