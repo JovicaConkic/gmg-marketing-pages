@@ -10,10 +10,10 @@
         display: block;
         @include retina-image('../img/GMG-logo-horizontal', 'png');
         @media (max-width: $small_devices){
-            width: 308px;
-            height: 53px;
+            width: 100%;
+            max-width: 308px;
+            padding-bottom: 17.2%;
             margin: auto;
-            @include retina-image('../img/GMG-logo-horizontal', 'png');
         }
     }
     .product_shots_mobile{
@@ -24,10 +24,12 @@
         @include retina-image('../img/product-shots-tablet-mobile', 'png');
     }
     .app-store-btn{
-        width: 203px;
-        height: 60px;
-        display: block;
+        width: 100%;
+        max-width: 203px;
+        padding-bottom: 29.5%;
+        display: inline-block;
         @include retina-image('../img/app-store-button', 'png');
+        background-position: top;
     }
     .product_shots{
         width: 100%;
@@ -57,31 +59,71 @@
             margin: 40px 0 20px;
         }
     }
+    .holder_right_box{
+        @media (max-width: $small_devices){
+            padding: 0;
+            background-color: $dark_color;
+        }
+    }
     .right_box{
+        width: 325px;
         background-color: $dark_color;
         border-radius: 10px;
-        padding: 20px;
-    }
-    .GMG_app_icon{
-        width: 114px;
-        height: 114px;
-        margin-right: 20px;
-        float: left;
-        @include retina-image('../img/GMG-app-icon', 'png');
-    }
-    .right_part{
-        float: right;
-        .try{
-            margin: 10px 0;
-            font-family: rubikmedium, Helvetica, Arial, sans-serif;
-            font-size: 24px;
-            font-weight: 500;
-            color: $white;
-            letter-spacing: 0px;
+        padding: 13px 11px 9px;
+        margin-top: 88px;
+        @media (max-width: $large_devices){
+            width: 100%;
         }
-        .app-store-btn{
-            width: 185px;
-            height: 55px;
+        @media (max-width: $small_devices){
+            max-width: 325px;
+            margin: auto;
+            float: none !important;
+        }
+        .left_part{
+            float: left;
+            width: 100%;
+            max-width: 114px;
+            margin-right: 11px;
+            @media (max-width: $large_devices){
+                margin: auto;
+                float: none;
+            }
+            @media (max-width: $small_devices){
+                margin-right: 11px;
+                float: left;
+            }
+            .GMG_app_icon{
+                width: 114px;
+                height: 114px;
+                @include retina-image('../img/GMG-app-icon', 'png');
+            }
+        }
+        .right_part{
+            float: left;
+            width: 100%;
+            max-width: 169px;
+            @media (max-width: $large_devices){
+                margin: auto;
+                float: none;
+            }
+            @media (max-width: $small_devices){
+                margin: 0;
+                float: left;
+            }
+            .try{
+                margin: 10px 0;
+                font-family: rubikmedium, Helvetica, Arial, sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                color: $white;
+                letter-spacing: 0px;
+                @media (max-width: $large_devices){
+                    text-align: center;
+                }
+            }
+            .app-store-btn{
+                max-width: 169px;
+            }
         }
     }
 }

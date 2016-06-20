@@ -20,13 +20,6 @@
 }
 
 @font-face {
-  font-family: 'rubiklight';
-  src: url("../fonts/rubik-light-webfont.eot");
-  src: url("../fonts/rubik-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubik-light-webfont.woff2") format("woff2"), url("../fonts/rubik-light-webfont.woff") format("woff"), url("../fonts/rubik-light-webfont.ttf") format("truetype"), url("../fonts/rubik-light-webfont.svg#rubikregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: 'rubikregular';
   src: url("../fonts/rubik-regular-webfont.eot");
   src: url("../fonts/rubik-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubik-regular-webfont.woff2") format("woff2"), url("../fonts/rubik-regular-webfont.woff") format("woff"), url("../fonts/rubik-regular-webfont.ttf") format("truetype"), url("../fonts/rubik-regular-webfont.svg#rubikregular") format("svg");
@@ -37,6 +30,13 @@
   font-family: 'rubikmedium';
   src: url("../fonts/rubik-medium-webfont.eot");
   src: url("../fonts/rubik-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubik-medium-webfont.woff2") format("woff2"), url("../fonts/rubik-medium-webfont.woff") format("woff"), url("../fonts/rubik-medium-webfont.ttf") format("truetype"), url("../fonts/rubik-medium-webfont.svg#rubikmedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rubikbold';
+  src: url("../fonts/rubik-bold-webfont.eot");
+  src: url("../fonts/rubik-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/rubik-bold-webfont.woff2") format("woff2"), url("../fonts/rubik-bold-webfont.woff") format("woff"), url("../fonts/rubik-bold-webfont.ttf") format("truetype"), url("../fonts/rubik-bold-webfont.svg#rubikmedium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -60,7 +60,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .GMG_logo {
-    background-image: url("../img/GMG-logo-horizontal@2x.png");
+    background-image: url("../img/GMG-logo-horizontal2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -69,25 +69,12 @@
 }
 @media (max-width: 767px) {
   .main .GMG_logo {
-    width: 308px;
-    height: 53px;
+    width: 100%;
+    max-width: 308px;
+    padding-bottom: 17.2%;
     margin: auto;
-    background-image: url("../img/GMG-logo-horizontal.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
   }
 }
-@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .main .GMG_logo {
-    background-image: url("../img/GMG-logo-horizontal@2x.png");
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-  }
-}
-
 .main .product_shots_mobile {
   display: block;
   width: 100%;
@@ -100,7 +87,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .product_shots_mobile {
-    background-image: url("../img/product-shots-tablet-mobile@2x.png");
+    background-image: url("../img/product-shots-tablet-mobile2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -108,17 +95,19 @@
   }
 }
 .main .app-store-btn {
-  width: 203px;
-  height: 60px;
-  display: block;
+  width: 100%;
+  max-width: 203px;
+  padding-bottom: 29.5%;
+  display: inline-block;
   background-image: url("../img/app-store-button.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: top;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .app-store-btn {
-    background-image: url("../img/app-store-button@2x.png");
+    background-image: url("../img/app-store-button2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -136,7 +125,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .product_shots {
-    background-image: url("../img/product-shots-desktop@2x.png");
+    background-image: url("../img/product-shots-desktop2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -158,7 +147,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .main .characters {
-    background-image: url("../img/characters@2x.png");
+    background-image: url("../img/characters2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -176,7 +165,7 @@
 }
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1024px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 1024px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 1024px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1024px) and (min-resolution: 192dpi), only screen and (max-width: 1024px) and (min-resolution: 2dppx) {
   .main .characters {
-    background-image: url("../img/characters-tablet@2x.png");
+    background-image: url("../img/characters-tablet2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -195,7 +184,7 @@
 }
 @media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-moz-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-o-min-device-pixel-ratio: 2 / 1), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .main .characters {
-    background-image: url("../img/characters-mobile@2x.png");
+    background-image: url("../img/characters-mobile2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -209,34 +198,84 @@
 .main .text_section h1 {
   margin: 40px 0 20px;
 }
+@media (max-width: 767px) {
+  .main .holder_right_box {
+    padding: 0;
+    background-color: #1B4D5F;
+  }
+}
 .main .right_box {
+  width: 325px;
   background-color: #1B4D5F;
   border-radius: 10px;
-  padding: 20px;
+  padding: 13px 11px 9px;
+  margin-top: 88px;
 }
-.main .GMG_app_icon {
+@media (max-width: 1024px) {
+  .main .right_box {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main .right_box {
+    max-width: 325px;
+    margin: auto;
+    float: none !important;
+  }
+}
+.main .right_box .left_part {
+  float: left;
+  width: 100%;
+  max-width: 114px;
+  margin-right: 11px;
+}
+@media (max-width: 1024px) {
+  .main .right_box .left_part {
+    margin: auto;
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  .main .right_box .left_part {
+    margin-right: 11px;
+    float: left;
+  }
+}
+.main .right_box .left_part .GMG_app_icon {
   width: 114px;
   height: 114px;
-  margin-right: 20px;
-  float: left;
   background-image: url("../img/GMG-app-icon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .main .GMG_app_icon {
-    background-image: url("../img/GMG-app-icon@2x.png");
+  .main .right_box .left_part .GMG_app_icon {
+    background-image: url("../img/GMG-app-icon2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
   }
 }
-.main .right_part {
-  float: right;
+.main .right_box .right_part {
+  float: left;
+  width: 100%;
+  max-width: 169px;
 }
-.main .right_part .try {
+@media (max-width: 1024px) {
+  .main .right_box .right_part {
+    margin: auto;
+    float: none;
+  }
+}
+@media (max-width: 767px) {
+  .main .right_box .right_part {
+    margin: 0;
+    float: left;
+  }
+}
+.main .right_box .right_part .try {
   margin: 10px 0;
   font-family: rubikmedium, Helvetica, Arial, sans-serif;
   font-size: 24px;
@@ -244,9 +283,13 @@
   color: #ffffff;
   letter-spacing: 0px;
 }
-.main .right_part .app-store-btn {
-  width: 185px;
-  height: 55px;
+@media (max-width: 1024px) {
+  .main .right_box .right_part .try {
+    text-align: center;
+  }
+}
+.main .right_box .right_part .app-store-btn {
+  max-width: 169px;
 }
 
 .footer {
@@ -254,7 +297,7 @@
   bottom: 0;
   height: 188px;
   width: 100%;
-  padding: 30px 0 30px 0;
+  padding: 30px 0;
   background-color: #181818;
 }
 @media (max-width: 767px) {
@@ -272,7 +315,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .HMH-logo {
-    background-image: url("../img/HMH-logo-vertical@2x.png");
+    background-image: url("../img/HMH-logo-vertical2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -299,11 +342,15 @@
   color: white;
   letter-spacing: 0px;
 }
+.footer .footer_links a span {
+  margin: 0 3px;
+}
 .footer .copyright {
   font-size: 13px;
   letter-spacing: 0px;
   line-height: 1em;
   text-align: right;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .footer .copyright {
@@ -313,6 +360,7 @@
 .footer .copyright_mobil {
   display: none;
   font-size: 13px;
+  color: #ffffff;
 }
 @media (max-width: 767px) {
   .footer .copyright_mobil {
@@ -347,7 +395,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .social_buttons a .facebook {
-    background-image: url("../img/facebook-btn@2x.png");
+    background-image: url("../img/facebook-btn2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -365,7 +413,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .social_buttons a .twitter {
-    background-image: url("../img/twitter-btn@2x.png");
+    background-image: url("../img/twitter-btn2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -383,7 +431,7 @@
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .footer .social_buttons a .app-store {
-    background-image: url("../img/app-store-badge-footer@2x.png");
+    background-image: url("../img/app-store-badge-footer2x.png");
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -413,18 +461,46 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%;
   color: #1B4D5F;
   font-size: 16px;
   font-family: rubikregular, Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   font-weight: 400;
   background-color: #ffffff;
+  position: relative;
 }
 
-.wrapper {
-  min-height: 100%;
-  position: relative;
+h1 {
+  font-family: rubikmedium, Helvetica, Arial, sans-serif;
+  color: #1B4D5F;
+  font-size: 38px;
+  line-height: 1.25em;
+  letter-spacing: 0;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+h2 {
+  font-family: rubikbold, Helvetica, Arial, sans-serif;
+  color: #1B4D5F;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1.25em;
+  margin: 0.5em 0;
+}
+
+::-moz-selection {
+  background: transparent;
+  color: white;
+  text-shadow: none;
+}
+
+::selection {
+  background: transparent;
+  color: white;
+  text-shadow: none;
 }
 
 #home {
@@ -442,39 +518,9 @@ body {
 #home h1 {
   color: #ffffff;
 }
-#home p {
-  color: white;
+#home.main p {
+  color: #ffffff;
   font-size: 18px;
-}
-
-h1 {
-  font-family: rubikmedium, Helvetica, Arial, sans-serif;
-  color: #1B4D5F;
-  font-size: 38px;
-  line-height: 1.5em;
-  letter-spacing: 0;
-  font-weight: 500;
-}
-
-h2 {
-  font-family: rubikmedium, Helvetica, Arial, sans-serif;
-  color: #1B4D5F;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: 1.25em;
-}
-
-::-moz-selection {
-  background: transparent;
-  color: white;
-  text-shadow: none;
-}
-
-::selection {
-  background: transparent;
-  color: white;
-  text-shadow: none;
 }
 
 @media print {
