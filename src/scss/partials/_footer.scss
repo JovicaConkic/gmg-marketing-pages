@@ -11,6 +11,7 @@
     .HMH-logo{
         width: 153px;
         height: 95px;
+        display: block;
         @include retina-image('../img/HMH-logo-vertical', 'png');
         @media (max-width: $small_devices){
             margin: 0 auto 30px;

@@ -308,6 +308,7 @@
 .footer .HMH-logo {
   width: 153px;
   height: 95px;
+  display: block;
   background-image: url("../img/HMH-logo-vertical.png");
   background-position: center;
   background-repeat: no-repeat;
